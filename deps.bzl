@@ -1,0 +1,1 @@
+/Users/sakthinatesan/go/src/github.com/ihtkas/bazel-gazelle-ex/deps.bzl
