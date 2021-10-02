@@ -1,0 +1,25 @@
+// protolint:disable MAX_LINE_LENGTH
+
+syntax = "proto3";
+
+package pinger;
+
+import "google/protobuf/timestamp.proto";
+import "validate/validate.proto";
+
+option go_package = "github.com/ihtkas/bazel-gazelle-ex/api/pinger;pingerpb";
+
+service PingerService {
+  rpc Ping(PingRequest) returns(PingResponse){}
+}
+
+message PingRequest {
+  google.protobuf.Timestamp at = 1 [(validate.rules).timestamp.required = true];;
+}
+
+message PingResponse {
+
+}
+
+// command to compile
+// protoc -I=. -I ~/go/pkg/mod/github.com/envoyproxy/protoc-gen-validate@v0.6.1 --go_out=./../../../  --validate_out="lang=go:./../../../" --go-grpc_out=./../../../ ./protos/pinger/service.proto

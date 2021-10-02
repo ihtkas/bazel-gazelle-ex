@@ -1,2 +1,1 @@
-# bazel-gazelle-ex
-Repsoitory to test bazel tool to build go project with proto and gRPC dependancy
+###### Repository to test bazel and gazelle tool to build go project with proto and gRPC dependencies.
