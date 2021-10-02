@@ -2,7 +2,7 @@
 
 **Usecase:**
 
-Use bazel and gazelle to build go repository with pre generated proto files. There are issues in using [validate rules](https://github.com/envoyproxy/protoc-gen-validate) from envoyproxy in proto definition and the bazel tool fails to build repository wth this dependency. To reproduce the issue, a proto file with a sample gRPC service is defined in the same repository in protos/service.proto. 
+Use bazel and gazelle to build go repository with pre generated proto files. There are issues in using [validate rules](https://github.com/envoyproxy/protoc-gen-validate) from envoyproxy in proto definition and the bazel tool fails to build repository with this dependency. To reproduce the issue, a proto file with a sample gRPC service is defined in the same repository in protos/service.proto. 
 
 Repository is cloned into a path ~/go/src/github.com/ihtkas/bazel-gazelle-ex
 
