@@ -75,8 +75,8 @@ def go_dependencies():
         name = "com_github_envoyproxy_protoc_gen_validate",
         build_file_proto_mode = "disable_global",
         importpath = "github.com/envoyproxy/protoc-gen-validate",
-        sum = "h1:4CF52PCseTFt4bE+Yk3dIpdVi7XWuPVMhPtm4FaIJPM=",
-        version = "v0.6.1",
+        sum = "h1:Z8KLvD5EId/Xv3dqTvR8zMva4eBPb//UFwW3ksI1UDo=",
+        version = "v0.6.2-0.20210610191444-4f41f10dde19",
     )
     go_repository(
         name = "com_github_ghodss_yaml",
@@ -145,8 +145,8 @@ def go_dependencies():
         name = "com_github_lyft_protoc_gen_star",
         build_file_proto_mode = "disable_global",
         importpath = "github.com/lyft/protoc-gen-star",
-        sum = "h1:sImehRT+p7lW9n6R7MQc5hVgzWGEkDVZU4AsBQ4Isu8=",
-        version = "v0.5.1",
+        sum = "h1:zSGLzsUew8RT+ZKPHc3jnf8XLaVyHzTcAFBzHtCNR20=",
+        version = "v0.5.3",
     )
     go_repository(
         name = "com_github_pkg_errors",
