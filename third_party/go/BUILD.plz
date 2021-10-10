@@ -18,7 +18,7 @@ go_mod_download(
     name = "github.com__envoyproxy__protoc-gen-validate",
     _tag = "download",
     module = "github.com/envoyproxy/protoc-gen-validate",
-    version = "v0.6.2-0.20210610191444-4f41f10dde19",
+    version = "v0.6.1",
 )
 
 go_module(
@@ -58,19 +58,6 @@ go_module(
         ":google.golang.org__protobuf__reflect__protoregistry",
         ":google.golang.org__protobuf__runtime__protoiface",
         ":google.golang.org__protobuf__runtime__protoimpl",
-    ],
-)
-
-go_module(
-    name = "github.com__golang__protobuf__protoc-gen-go__descriptor",
-    download = ":_github.com__golang__protobuf#download",
-    install = ["protoc-gen-go/descriptor"],
-    module = "github.com/golang/protobuf",
-    visibility = ["PUBLIC"],
-    deps = [
-        ":google.golang.org__protobuf__reflect__protoreflect",
-        ":google.golang.org__protobuf__runtime__protoimpl",
-        ":google.golang.org__protobuf__types__descriptorpb",
     ],
 )
 
@@ -202,20 +189,14 @@ go_mod_download(
     name = "golang.org__x__sys",
     _tag = "download",
     module = "golang.org/x/sys",
-    version = "v0.0.0-20200930185726-fdedc70b468f",
+    version = "v0.0.0-20200323222414-85ca7c5b95cd",
 )
 
 if is_platform(
     arch = ["amd64"],
     os = ["linux"],
 ):
-    go_module(name = "golang.org__x__sys__internal__unsafeheader", download = ":_golang.org__x__sys#download", install = ["internal/unsafeheader"], module = "golang.org/x/sys", visibility = ["PUBLIC"], deps = [])
-
-if is_platform(
-    arch = ["amd64"],
-    os = ["linux"],
-):
-    go_module(name = "golang.org__x__sys__unix", download = ":_golang.org__x__sys#download", install = ["unix"], module = "golang.org/x/sys", visibility = ["PUBLIC"], deps = select({":__config_darwin_amd64": [], ":__config_linux_amd64": [":golang.org__x__sys__internal__unsafeheader"], "default": []}))
+    go_module(name = "golang.org__x__sys__unix", download = ":_golang.org__x__sys#download", install = ["unix"], module = "golang.org/x/sys", visibility = ["PUBLIC"], deps = [])
 
 go_mod_download(
     name = "golang.org__x__text",

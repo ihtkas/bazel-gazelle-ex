@@ -2,7 +2,6 @@
     "known_dependency": {
         "github.com/envoyproxy/protoc-gen-validate/validate": "//third_party/go:github.com__envoyproxy__protoc-gen-validate__validate",
         "github.com/golang/protobuf/proto": "//third_party/go:github.com__golang__protobuf__proto",
-        "github.com/golang/protobuf/protoc-gen-go/descriptor": "//third_party/go:github.com__golang__protobuf__protoc-gen-go__descriptor",
         "github.com/golang/protobuf/ptypes": "//third_party/go:github.com__golang__protobuf__ptypes",
         "github.com/golang/protobuf/ptypes/any": "//third_party/go:github.com__golang__protobuf__ptypes__any",
         "github.com/golang/protobuf/ptypes/duration": "//third_party/go:github.com__golang__protobuf__ptypes__duration",
@@ -13,7 +12,6 @@
         "golang.org/x/net/idna": "//third_party/go:golang.org__x__net__idna",
         "golang.org/x/net/internal/timeseries": "//third_party/go:golang.org__x__net__internal__timeseries",
         "golang.org/x/net/trace": "//third_party/go:golang.org__x__net__trace",
-        "golang.org/x/sys/internal/unsafeheader": "//third_party/go:golang.org__x__sys__internal__unsafeheader",
         "golang.org/x/sys/unix": "//third_party/go:golang.org__x__sys__unix",
         "golang.org/x/text/secure/bidirule": "//third_party/go:golang.org__x__text__secure__bidirule",
         "golang.org/x/text/transform": "//third_party/go:golang.org__x__text__transform",

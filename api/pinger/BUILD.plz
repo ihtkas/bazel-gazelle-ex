@@ -4,7 +4,7 @@ go_library(
     visibility = ["//..."],
     deps = [
         "//third_party/go:github.com__envoyproxy__protoc-gen-validate__validate",
-        "//third_party/go:github.com__golang__protobuf__protoc-gen-go__descriptor",
+        "//third_party/go:github.com__golang__protobuf__proto",
         "//third_party/go:github.com__golang__protobuf__ptypes__timestamp",
         "//third_party/go:google.golang.org__grpc",
         "//third_party/go:google.golang.org__grpc__codes",
