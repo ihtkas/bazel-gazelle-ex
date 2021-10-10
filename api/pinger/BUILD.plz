@@ -1,0 +1,16 @@
+go_library(
+    name = "pinger",
+    srcs = glob(["*.go"], exclude = ["*_test.go"]),
+    visibility = ["//..."],
+    deps = [
+        "//third_party/go:github.com__envoyproxy__protoc-gen-validate__validate",
+        "//third_party/go:github.com__golang__protobuf__protoc-gen-go__descriptor",
+        "//third_party/go:github.com__golang__protobuf__ptypes__timestamp",
+        "//third_party/go:google.golang.org__grpc",
+        "//third_party/go:google.golang.org__grpc__codes",
+        "//third_party/go:google.golang.org__grpc__status",
+        "//third_party/go:google.golang.org__protobuf__reflect__protoreflect",
+        "//third_party/go:google.golang.org__protobuf__runtime__protoimpl",
+        "//third_party/go:google.golang.org__protobuf__types__known__anypb",
+    ],
+)

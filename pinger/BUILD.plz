@@ -1,0 +1,9 @@
+go_library(
+    name = "pinger",
+    srcs = glob(["*.go"], exclude = ["*_test.go"]),
+    visibility = ["//..."],
+    deps = [
+        "//api/pinger",
+        "//third_party/go:github.com__golang__protobuf__protoc-gen-go__descriptor",
+    ],
+)

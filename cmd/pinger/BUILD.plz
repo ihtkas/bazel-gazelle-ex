@@ -1,0 +1,10 @@
+go_binary(
+    name = "pinger",
+    srcs = glob(["*.go"], exclude = ["*_test.go"]),
+    visibility = ["PUBLIC"],
+    deps = [
+        "//api/pinger",
+        "//pinger",
+        "//third_party/go:google.golang.org__grpc",
+    ],
+)
